@@ -82,7 +82,7 @@ def main():
     all_platzi_devs = list(map(lambda worker: worker['name'], all_platzi_devs))
 
     adults = [worker['name'] for worker in DATA if worker['age'] > 18]
-    old_people = [{**worker, **{'old': worker['age'] > 70}} for worker in DATA]
+    old_people = [worker | {'old': worker['age'] > 70} for worker in DATA]
 
     print(all_python_devs, all_platzi_devs, adults, old_people)
 
