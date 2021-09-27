@@ -7,9 +7,25 @@ def divisors(num):
     return divisors
 
 def main():
-    num = int(input('Ingresa un número: '))
-    print(divisors(num))
-    print('Terminó mi programa')
+
+    try:
+        num = int(input('Ingresa un número entero positivo: '))
+        if num < 0 or num%1 != 0:
+            raise Exception('Debes ingresar un número entero positivo 🙄')
+        print(divisors(num))
+
+    except ValueError:
+        print('Debes ingresar un número 👀')
+
+    except Exception as ve:
+        print(ve)
+        exit()
+
+    else:
+        print('Ningun error en el camino 😁')
+
+    finally:
+        print('Terminó mi programa 💓')
 
 if __name__=='__main__':
     main()
