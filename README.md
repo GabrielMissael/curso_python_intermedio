@@ -1,5 +1,8 @@
 # Notas del Curso de Python: Comprehensions, Lambdas y Manejo de Errores 🐍
 
+- Instructor: Facundo García Martoni
+- Link al curso: [Curso de Python: Comprehensions, Lambdas y Manejo de Errores](https://platzi.com/clases/python-intermedio/)
+
 ## Preparación antes de empezar
 
 ### El Zen de Python
